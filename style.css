@@ -24,6 +24,7 @@
     color: #002765;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -92,7 +93,7 @@ ul li i{
     top: 5px;
     width: 40px;
     height: 40px;
-    font-size: 22px;
+    font-size: 20px;
     color: #555;
     line-height: 40px;
     text-align: center;
@@ -123,4 +124,27 @@ ul li i:hover{
     100% { transform: rotate(0); }
   }
 
-  
+  @media (max-width:390px){
+    .row{
+        margin-left: -12px;
+    }
+    .row #input-box{
+        padding: 6px;
+        width: 55vw;
+    }
+    .row button{
+        padding: 8px 26px;
+        font-size: 12px;
+    }
+    .todo-app ul li{
+        list-style: none;
+        font-size: 16px;
+        padding: 12px 8px 12px 30px;
+        
+    }
+    /*-----bin icon------*/
+    ul li i{
+        font-size: 17px;
+    }
+    
+  }
